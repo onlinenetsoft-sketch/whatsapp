@@ -1,0 +1,12 @@
+const express = require('express');
+
+const router = express.Router();
+
+router.get('/dashboard', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Affiliate dashboard'
+  });
+});
+
+module.exports = router;
